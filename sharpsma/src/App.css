@@ -39,6 +39,8 @@
 body {
   overflow-x: hidden !important;
   display: flex;
+  margin:0;
+  padding:0;
   /* white-space: nowrap; */
   /* padding: 10px; */
 }
@@ -57,8 +59,9 @@ body > * {
   display:flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  height: 44px;
   width:100%;
+  color:rgba(0,0,0,0.8)
 }
 .nav-links{
   width: 40%;
@@ -82,11 +85,14 @@ body > * {
   position: fixed;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  height: 44px;
   width:100%;
   background-color: white;
-  transition:0.8s;
-  opacity: .8;
+  /* transition-property: height; */
+  transition: 1s;
+  opacity:.8; 
+	box-shadow: 5px 5px 5px rgb(189, 188, 188);
+
 }
 .sticky-links{
   width: 40%;
@@ -100,7 +106,7 @@ body > * {
 .stickyColor{
   color: black !important;
 }
-.sticky:hover{
+.stickyColor:hover{
   color:red !important;
 }
 
@@ -157,7 +163,7 @@ button.snip1099 {
   font-weight: 400;
   font-size: 1em;
   outline: none;
-  position: relative;
+  position: unset;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -240,3 +246,35 @@ body {
   margin: 0;
   height: 100%;
 } */
+.hrLine{
+  border: 2px solid black;
+  margin-top: 150px;
+  margin-left: 60px;
+  margin-right: 60px;
+ 
+}
+.foot{ 
+  /* background-image: url("./images/kv_ces2020_index_05.jpg"); */
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 44px;
+  width:100%;
+  color:rgba(0,0,0,0.8)
+}
+.foot-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white !important;
+  opacity:1;
+}
+.footColor{
+  margin-left: 20px;
+  color: black !important;
+}
+.footColor:hover{
+  color:red !important;
+}
